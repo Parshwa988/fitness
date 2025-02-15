@@ -1,0 +1,231 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    flex: 1;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ff5722; /* Changed background color */
+    color: white;
+    border-radius: 10px;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #ff5722;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+    color: white;
+}
+
+
+/* Section Styling */
+.section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Programs Section */
+.program-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.program {
+    flex: 1;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Coaches Section */
+.coach-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.coach {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Progress Section */
+.progress-info {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    margin-top: auto;
+}
+/* Popup Overlay */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    pointer-events: none; /* Prevent clicks on background */
+}
+
+/* Popup Box */
+.popup-content {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    pointer-events: auto; /* Allow clicks inside the pop-up */
+}
+
+/* Title Fix */
+.popup-content h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Input Fields */
+.popup-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.popup-content button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.popup-content {
+    background: white !important;  /* Force solid background */
+    padding: 25px !important;
+    border-radius: 10px !important;
+    width: 350px !important;
+    text-align: center !important;
+    position: relative !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    z-index: 1001 !important;
+}
+
