@@ -1,2 +1,2 @@
-Step 1:Save index.html and styles.html in your pc.
-Step 2:Open index.html to view BOOSTCAMP
+Step 1:Download ZIP of this file through github: "https://github.com/Parshwa988/fitness"
+Step 2:Open the  BOOSTCAMP.html file.
